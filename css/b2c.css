@@ -107,7 +107,7 @@
 }
 
 #FacebookExchange:before  {
-    font-family: "Font Awesome 5 Free"; /* This is the correct font-family*/
+    font-family: "Font Awesome 5 Brands"; /* This is the correct font-family*/
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
@@ -118,7 +118,7 @@
 }
 
 #GoogleExchange:before  {
-    font-family: "Font Awesome 5 Free"; /* This is the correct font-family*/
+    font-family: "Font Awesome 5 Brands"; /* This is the correct font-family*/
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
