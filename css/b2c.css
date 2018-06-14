@@ -29,6 +29,18 @@
     display: none;
 }
 
+.entry-item:after {
+    content: " *";
+    position: relative;
+    right: 0px;
+    float: right;
+    top: -30px;
+    z-index: 10;
+    font-family: "canaro_light";
+    font-size: 26px;
+    color: #fa551e;
+}
+
 #forgotPassword {
     font-family: "canaro_book_italic";
     font-size: 12px;
