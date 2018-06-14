@@ -1,4 +1,4 @@
-.api .divider {
+#api .divider {
     display: none;
 }
 
@@ -25,7 +25,7 @@
     text-align: left;
 }
 
-.entry .entry-item input {
+.entry .entry-item label {
     display: none;
 }
 
@@ -71,7 +71,7 @@
     margin-bottom: 5px;
 }
 
-.createAccount {
+#createAccount {
     width: auto;
     height: auto;
     line-height: 1;
@@ -91,4 +91,33 @@
     vertical-align: middle;
     user-select: none;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.social .options div {
+    display: inline-block
+}
+
+#FacebookExchange, #GoogleExchange
+{
+    font-size:0;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: solid 1px #dbdbdb;
+}
+
+#FacebookExchange:before  {
+    font-family: FontAwesome;
+    font-size: 30px;
+    display: inline-block;
+    content: '\f39e';
+    color: #a4adb1;
+}
+
+#GoogleExchange:before  {
+    font-family: FontAwesome;
+    font-size: 30px;
+    display: inline-block;
+    content: '\f1a0';
+    color: #a4adb1;
 }
