@@ -107,7 +107,10 @@
 }
 
 #FacebookExchange:before  {
-    font-family: FontAwesome;
+    font-family: "Font Awesome 5 Free"; /* This is the correct font-family*/
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
     font-size: 30px;
     display: inline-block;
     content: '\f39e';
@@ -115,7 +118,10 @@
 }
 
 #GoogleExchange:before  {
-    font-family: FontAwesome;
+    font-family: "Font Awesome 5 Free"; /* This is the correct font-family*/
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
     font-size: 30px;
     display: inline-block;
     content: '\f1a0';
