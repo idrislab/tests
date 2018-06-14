@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'canaro_light';
+    src: url(/static/fonts/canaro-light-webfont.8594cf8.woff2) format("woff2"), url(/static/fonts/canaro-light-webfont.34f38b0.woff) format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'canaro_light_italic';
+    src: url(/static/fonts/canaro-lightitalic-webfont.aa96bff.woff2) format("woff2"), url(/static/fonts/canaro-lightitalic-webfont.3a99b5c.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'canaro_book';
+    src: url(/static/fonts/canaro-book-webfont.234a586.woff2) format("woff2"), url(/static/fonts/canaro-book-webfont.7b7aa1c.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'canaro_book_italic';
+    src: url(/static/fonts/canaro-bookitalic-webfont.f7fe014.woff2) format("woff2"), url(/static/fonts/canaro-bookitalic-webfont.5d8e78f.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'canaro_medium';
+    src: url(/static/fonts/canaro-medium-webfont.dbaa6b8.woff2) format("woff2"), url(/static/fonts/canaro-medium-webfont.8a66645.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'canaro_medium_italic';
+    src: url(/static/fonts/canaro-mediumitalic-webfont.a08bbcb.woff2) format("woff2"), url(/static/fonts/canaro-mediumitalic-webfont.fc58895.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'canaro_semibold';
+    src: url(/static/fonts/canaro-semibold-webfont.98c2a64.woff2) format("woff2"), url(/static/fonts/canaro-semibold-webfont.a92e6ad.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'canaro_semibold_italic';
+    src: url(/static/fonts/canaro-semibolditalic-webfont.fb6a5c9.woff2) format("woff2"), url(/static/fonts/canaro-semibolditalic-webfont.8bc8076.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'canaro_bold';
+    src: url(/static/fonts/canaro-bold-webfont.28de637.woff2) format("woff2"), url(/static/fonts/canaro-bold-webfont.8afe761.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'canaro_bold_italic';
+    src: url(/static/fonts/canaro-bolditalic-webfont.7e4e956.woff2) format("woff2"), url(/static/fonts/canaro-bolditalic-webfont.776c235.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'canaro_black';
+    src: url(/static/fonts/canaro-black-webfont.1c8bd2b.woff2) format("woff2"), url(/static/fonts/canaro-black-webfont.34ae86c.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'canaro_black_italic';
+    src: url(/static/fonts/canaro-blackitalic-webfont.bd08836.woff2) format("woff2"), url(/static/fonts/canaro-blackitalic-webfont.fd0fccd.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
