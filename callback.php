@@ -1,6 +1,10 @@
 <?php
 require 'vendor/autoload.php';
 
+use Lcobucci\JWT\Parser;
+use Lcobucci\JWT\Signer\Rsa\Sha256;
+use Lcobucci\JWT\ValidationData;
+
 $client = new GuzzleHttp\Client();
 
 //https://login.microsoftonline.com/galpiddev.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1_Galp&client_id=e14765b1-fd07-4a3c-b0bc-6ae44b0dab9d&nonce=defaultNonce&redirect_uri=https%3A%2F%2F178.128.160.189%2Fcallback.php&scope=e14765b1-fd07-4a3c-b0bc-6ae44b0dab9d%20offline_access&response_type=code&prompt=login&response_mode=form_post
@@ -20,6 +24,48 @@ $response = $client->post($url, [
 
 $contents = json_decode($response->getBody()->getContents());
 
+function isTokenValid($token)
+{
+
+    try {
+
+        $tokenObj = (new Parser())->parse((string)$token);
+
+        $uri = 'https://login.microsoftonline.com/galpiddev.onmicrosoft.com/discovery/v2.0/keys?p=b2c_1_galp';
+
+        $response = json_decode($this->client->get($uri)->getBody()->getContents());
+
+        $x5c = '';
+
+        foreach ($response->keys as $key) {
+
+            if ($key->kid === $tokenObj->getHeader('kid')) {
+
+                $x5c = $this->transformKey(current($key->x5c));
+                break;
+            }
+        }
+
+        $data = new ValidationData();
+
+        $data->setIssuer('https://login.microsoftonline.com/82ec3de0-104a-4bcd-b900-66aaeb87a9dc/v2.0/');
+        $data->setAudience('e14765b1-fd07-4a3c-b0bc-6ae44b0dab9d');
+
+        $signer = new Sha256();
+
+        return $tokenObj->validate($data) && $tokenObj->verify($signer, $x5c);
+    } catch (ClientException $e) {
+
+    } catch (InvalidArgumentException $e) {
+
+    }
+
+    return false;
+}
+
+if(isset($contents->id_token)) {
+    var_dump(isTokenValid($contents->id_token));
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
