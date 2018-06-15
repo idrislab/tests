@@ -18,7 +18,7 @@ $response = $client->post($url, [
     'http_errors' => FALSE,
 ]);
 
-$contents = utf8_encode(json_encode($response->getBody()->getContents(), TRUE));
+$contents = json_encode($response->getBody()->getContents(), TRUE);
 
 ?>
 <!DOCTYPE html>
