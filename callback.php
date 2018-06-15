@@ -19,7 +19,7 @@ $response = $client->post($url, [
     'http_errors' => FALSE,
 ]);
 
-$contents = $response->getBody()->getContents();
+$contents = json_decode($response->getBody()->getContents());
 
 ?>
 <!DOCTYPE html>
@@ -66,7 +66,8 @@ $contents = $response->getBody()->getContents();
                         <?php
                         print_r($contents);
                         ?>
-                            </code></pre>
+                            </code>
+                        </pre>
                         <!--<div class="auth__input i-wrapper"><label>E-mail</label> <input name="email" type="email"> <span-->
                         <!--class="auth__input&#45;&#45;mandatory">*</span> <span class="auth__input&#45;&#45;error-message"></span>-->
                         <!--</div>-->
