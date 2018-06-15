@@ -3,7 +3,7 @@ require 'vendor/autoload.php';
 
 $client = new GuzzleHttp\Client();
 
-//https://login.microsoftonline.com/galpiddev.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1_Galp&client_id=e14765b1-fd07-4a3c-b0bc-6ae44b0dab9d&nonce=defaultNonce&redirect_uri=https%3A%2F%2F178.128.160.189%2Fcallback.php&scope=e14765b1-fd07-4a3c-b0bc-6ae44b0dab9d%20offline_access&response_type=code&prompt=login&response_mode=query
+//https://login.microsoftonline.com/galpiddev.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1_Galp&client_id=e14765b1-fd07-4a3c-b0bc-6ae44b0dab9d&nonce=defaultNonce&redirect_uri=https%3A%2F%2F178.128.160.189%2Fcallback.php&scope=openid%20offline_access&response_type=code+id_token&prompt=login&response_mode=form_post
 $url = 'https://login.microsoftonline.com/galpiddev.onmicrosoft.com/oauth2/v2.0/token?p=B2C_1_Galp';
 
 $response = $client->post($url, [
@@ -11,7 +11,7 @@ $response = $client->post($url, [
         'grant_type' => 'authorization_code',
         'client_id' => 'e14765b1-fd07-4a3c-b0bc-6ae44b0dab9d',
         'client_secret' => 'TQfHi64wzN5!7`ti^?2d"LgM',
-        'code' => $_GET['code'],
+        'code' => $_POST['code'],
         'redirect_uri' => 'https://178.128.160.189/callback.php',
        // 'redirect_uri' => 'urn:ietf:wg:oauth:2.0:oob',
         'scope' => 'offline_access e14765b1-fd07-4a3c-b0bc-6ae44b0dab9d',
