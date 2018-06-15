@@ -9,9 +9,10 @@ $response = $client->post($url, [
     'form_params' => [
         'grant_type' => 'authorization_code',
         'client_id' => 'e14765b1-fd07-4a3c-b0bc-6ae44b0dab9d',
+        'client_secret' => 'TQfHi64wzN5!7`ti^?2d"LgM',
         'code' => $_GET['code'],
         'redirect_uri' => 'https://178.128.160.189/callback.php',
-        'scope' => 'offline_access e14765b1-fd07-4a3c-b0bc-6ae44b0dab9d',
+        'scope' => 'offline_access e14765b1-fd07-4a3c-b0bc-6ae44b0dab9d openid email',
     ],
     'http_errors' => FALSE,
 ]);
