@@ -782,7 +782,7 @@ svg:not(:root) {
     color: #676c6f;
 }
 
-.galp-form .social-account__text {
+.social-account__text {
     width: 435px;
     height: 22px;
     font-family: Roboto;
