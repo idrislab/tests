@@ -781,3 +781,17 @@ svg:not(:root) {
     line-height: 1;
     color: #676c6f;
 }
+
+.galp-form .social-account__text {
+    width: 435px;
+    height: 22px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: left;
+    color: #676c6f;
+}

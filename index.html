@@ -4,7 +4,9 @@
     <base href="https://178.128.160.189">
     <meta charset="UTF-8">
     <title>Teste Galp Azure B2C</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href="https://178.128.160.189/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://178.128.160.189/css/fonts.css" rel="stylesheet">
     <link href="https://178.128.160.189/css/app.css" rel="stylesheet">
@@ -37,49 +39,51 @@
 
                         <div id="api"></div>
 
+                        <span id="social-account__text">Se associou uma das suas redes socias:</span>
+
                         <!-- /azure b2c -->
 
-                        <div class="auth__input i-wrapper"><label>E-mail</label> <input name="email" type="email"> <span
-                                class="auth__input--mandatory">*</span> <span class="auth__input--error-message"></span>
-                        </div>
-                        <div class="auth__input auth__input--orange i-wrapper"><label>palavra-passe</label> <input
-                                name="password" type="password">
-                            <button class="auth__input--toggle">
-                                <svg width="18" height="14" xmlns="https://www.w3.org/2000/svg"
-                                     xmlns:xlink="https://www.w3.org/1999/xlink" class="svg svg--hidden">
-                                    <path d="M16 .516L.743 13.447" id="a"></path>
-                                    <path d="M9 10.6c-2.13 0-3.857-1.611-3.857-3.6C5.143 5.012 6.87 3.4 9 3.4s3.857 1.612 3.857 3.6c0 1.989-1.727 3.6-3.857 3.6M0 6.953s8.084 13.606 18 0c-9.916-13.394-18 0-18 0"
-                                          fill="#D0D5D7"></path>
-                                    <use stroke="#FFF" stroke-width="3" xlink:href="#a"></use>
-                                    <use stroke="#D0D5D7" xlink:href="#a"></use>
-                                </svg>
-                            </button>
-                            <span class="auth__input--mandatory">*</span> <span
-                                    class="auth__input--error-message"></span></div>
-                        <div class="options-container">
-                            <ul class="g-group g-group--icn">
-                                <li class="g-check checked"><input type="checkbox" name="remember">
-                                    <svg width="17" height="11" viewBox="0 0 17 11" xmlns="https://www.w3.org/2000/svg"
-                                         class="svg svg--stk svg-check">
-                                        <path d="M.91 5.287L5.922 10.3l9.74-9.74"></path>
-                                    </svg>
-                                    <label for="remember">Lembrar dados de acesso?</label></li>
-                            </ul>
-                            <button class="options-container__pw  btn btn--txt"><span class="btn__txt">Não se lembra da palavra-passe?</span>
-                            </button>
-                        </div>
-                        <button class="auth__action-btn auth__action-btn--login btn btn--grd disabled">
-                            seguinte
-                        </button> <!----> <!----> <!---->
-                        <div class="auth__footer"><span class="auth__footer--label">Ainda não tem conta Galp?</span>
-                            <button class="btn btn--und"><span class="btn__txt"> Criar Conta </span>
-                                <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 5 8"
-                                     class="svg svg-arrow svg-arrow--right btn__svg">
-                                    <path d="M.5 0a.49.49 0 0 0-.33.13.41.41 0 0 0 0 .58L3.67 4 .14 7.26a.41.41 0 0 0 0 .58.49.49 0 0 0 .66 0L5 4 .8.13A.49.49 0 0 0 .5 0"
-                                          class="svg__path"></path>
-                                </svg>
-                            </button>
-                        </div>
+                        <!--<div class="auth__input i-wrapper"><label>E-mail</label> <input name="email" type="email"> <span-->
+                        <!--class="auth__input&#45;&#45;mandatory">*</span> <span class="auth__input&#45;&#45;error-message"></span>-->
+                        <!--</div>-->
+                        <!--<div class="auth__input auth__input&#45;&#45;orange i-wrapper"><label>palavra-passe</label> <input-->
+                        <!--name="password" type="password">-->
+                        <!--<button class="auth__input&#45;&#45;toggle">-->
+                        <!--<svg width="18" height="14" xmlns="https://www.w3.org/2000/svg"-->
+                        <!--xmlns:xlink="https://www.w3.org/1999/xlink" class="svg svg&#45;&#45;hidden">-->
+                        <!--<path d="M16 .516L.743 13.447" id="a"></path>-->
+                        <!--<path d="M9 10.6c-2.13 0-3.857-1.611-3.857-3.6C5.143 5.012 6.87 3.4 9 3.4s3.857 1.612 3.857 3.6c0 1.989-1.727 3.6-3.857 3.6M0 6.953s8.084 13.606 18 0c-9.916-13.394-18 0-18 0"-->
+                        <!--fill="#D0D5D7"></path>-->
+                        <!--<use stroke="#FFF" stroke-width="3" xlink:href="#a"></use>-->
+                        <!--<use stroke="#D0D5D7" xlink:href="#a"></use>-->
+                        <!--</svg>-->
+                        <!--</button>-->
+                        <!--<span class="auth__input&#45;&#45;mandatory">*</span> <span-->
+                        <!--class="auth__input&#45;&#45;error-message"></span></div>-->
+                        <!--<div class="options-container">-->
+                        <!--<ul class="g-group g-group&#45;&#45;icn">-->
+                        <!--<li class="g-check checked"><input type="checkbox" name="remember">-->
+                        <!--<svg width="17" height="11" viewBox="0 0 17 11" xmlns="https://www.w3.org/2000/svg"-->
+                        <!--class="svg svg&#45;&#45;stk svg-check">-->
+                        <!--<path d="M.91 5.287L5.922 10.3l9.74-9.74"></path>-->
+                        <!--</svg>-->
+                        <!--<label for="remember">Lembrar dados de acesso?</label></li>-->
+                        <!--</ul>-->
+                        <!--<button class="options-container__pw  btn btn&#45;&#45;txt"><span class="btn__txt">Não se lembra da palavra-passe?</span>-->
+                        <!--</button>-->
+                        <!--</div>-->
+                        <!--<button class="auth__action-btn auth__action-btn&#45;&#45;login btn btn&#45;&#45;grd disabled">-->
+                        <!--seguinte-->
+                        <!--</button> &lt;!&ndash;&ndash;&gt; &lt;!&ndash;&ndash;&gt; &lt;!&ndash;&ndash;&gt;-->
+                        <!--<div class="auth__footer"><span class="auth__footer&#45;&#45;label">Ainda não tem conta Galp?</span>-->
+                        <!--<button class="btn btn&#45;&#45;und"><span class="btn__txt"> Criar Conta </span>-->
+                        <!--<svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 5 8"-->
+                        <!--class="svg svg-arrow svg-arrow&#45;&#45;right btn__svg">-->
+                        <!--<path d="M.5 0a.49.49 0 0 0-.33.13.41.41 0 0 0 0 .58L3.67 4 .14 7.26a.41.41 0 0 0 0 .58.49.49 0 0 0 .66 0L5 4 .8.13A.49.49 0 0 0 .5 0"-->
+                        <!--class="svg__path"></path>-->
+                        <!--</svg>-->
+                        <!--</button>-->
+                        <!--</div>-->
                         <div class="auth__notes">
                             <p> Ao entrar na área de Cliente Galp está a aceitar os nossos
                                 <button class="btn btn--und"><span class="btn__txt">termos e condições</span></button>
