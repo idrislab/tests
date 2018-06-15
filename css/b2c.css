@@ -157,7 +157,7 @@
     color: #a4adb1;
 }
 
-.error .alert {
+.error p {
     opacity: 0;
     font-family: "canaro_light";
     font-size: 14px;
