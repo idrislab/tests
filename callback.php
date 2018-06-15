@@ -45,7 +45,7 @@ function isTokenValid($token)
 
             if ($key->kid === $tokenObj->getHeader('kid')) {
 
-                $x5c = $this->transformKey(current($key->x5c));
+                $x5c = transformKey(current($key->x5c));
                 break;
             }
         }
@@ -65,6 +65,16 @@ function isTokenValid($token)
     }
 
     return false;
+}
+
+function transformKey($key)
+{
+
+    $output = "-----BEGIN CERTIFICATE-----\n";
+    $output .= wordwrap($key, 64, "\n", TRUE);
+    $output .= "\n-----END CERTIFICATE-----";
+
+    return $output;
 }
 
 if(isset($contents->id_token)) {
