@@ -11,7 +11,7 @@ $response = $client->post($url, [
         'client_id' => 'e14765b1-fd07-4a3c-b0bc-6ae44b0dab9d',
         'code' => $_GET['code'],
         'redirect_uri' => 'https://178.128.160.189/callback.php',
-        'scope' => 'offline_access e14765b1-fd07-4a3c-b0bc-6ae44b0dab9d openid email',
+        'scope' => 'offline_access openid email',
     ],
     'http_errors' => FALSE,
 ]);
