@@ -44,6 +44,7 @@
 .entry {
     position: relative;
 }
+
 #forgotPassword {
     font-family: "canaro_book_italic";
     font-size: 12px;
@@ -110,8 +111,19 @@
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+.api {
+    position: relative;
+    padding: 50px 0px;
+}
+
+.social {
+    position: absolute;
+    bottom: 0px;
+}
+
 .social .options div {
-    display: inline-block
+    display: inline-block;
+    margin-right: 10px;
 }
 
 #FacebookExchange, #GoogleExchange
@@ -143,4 +155,17 @@
     display: inline-block;
     content: '\f1a0';
     color: #a4adb1;
+}
+
+.error .alert {
+    opacity: 0;
+    font-family: "canaro_light";
+    font-size: 14px;
+    line-height: 1.07;
+    letter-spacing: -0.5px;
+    color: #FC4242;
+    display: inline-block;
+    margin-top: 5px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
 }
