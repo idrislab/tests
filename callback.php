@@ -18,7 +18,7 @@ $response = $client->post($url, [
     'http_errors' => FALSE,
 ]);
 
-$contents = htmlentities(json_encode($response->getBody()->getContents(), TRUE));
+$contents = $response->getBody()->getContents();
 
 ?>
 <!DOCTYPE html>
