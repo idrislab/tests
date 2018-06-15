@@ -6,11 +6,37 @@
     <title>Teste Galp Azure B2C</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
           integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href="https://178.128.160.189/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://178.128.160.189/css/fonts.css" rel="stylesheet">
     <link href="https://178.128.160.189/css/app.css" rel="stylesheet">
     <link href="https://178.128.160.189/css/b2c.css" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+      }
+
+      axios.post('https://login.microsoftonline.com/galpiddev.onmicrosoft.com/oauth2/v2.0/token?p=B2C_1_Galp', {
+        client_id: 'e14765b1-fd07-4a3c-b0bc-6ae44b0dab9d',
+        grant_type: 'authorization_code',
+        scope: 'offline_access e14765b1-fd07-4a3c-b0bc-6ae44b0dab9d openid email'
+        code: getParameterByName('code'),
+        redirect_uri: 'https://178.128.160.189/callback.php'
+      })
+        .then(function (response) {
+          console.log(response);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    </script>
 </head>
 <body>
 <div id="app" class="app-wrapper">
@@ -36,7 +62,7 @@
                             <p>bem-vindo a casa.</p></h1>
 
                         <?php
-
+                        print_r($_POST['code']);
                         ?>
                         <p class="auth__subtitle">Login efectuado com sucesso.</p>
 
