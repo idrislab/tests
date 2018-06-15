@@ -34,6 +34,10 @@
                     <div class="galp-form galp-form--initial-form galp-form--login">
                         <h1><span class="auth__title--bold">Área de Cliente <span class="clr-orange">Galp</span></span>
                             <p>bem-vindo a casa.</p></h1>
+
+                        <?php
+
+                        ?>
                         <p class="auth__subtitle">Login efectuado com sucesso.</p>
 
                         <!--<div class="auth__input i-wrapper"><label>E-mail</label> <input name="email" type="email"> <span-->
