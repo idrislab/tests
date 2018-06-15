@@ -26,7 +26,7 @@
       axios.post('https://login.microsoftonline.com/galpiddev.onmicrosoft.com/oauth2/v2.0/token?p=B2C_1_Galp', {
         client_id: 'e14765b1-fd07-4a3c-b0bc-6ae44b0dab9d',
         grant_type: 'authorization_code',
-        scope: 'offline_access e14765b1-fd07-4a3c-b0bc-6ae44b0dab9d openid email'
+        scope: 'offline_access e14765b1-fd07-4a3c-b0bc-6ae44b0dab9d openid email',
         code: getParameterByName('code'),
         redirect_uri: 'https://178.128.160.189/callback.php'
       })
