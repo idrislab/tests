@@ -35,7 +35,9 @@ function isTokenValid($token)
 
         $uri = 'https://login.microsoftonline.com/galpiddev.onmicrosoft.com/discovery/v2.0/keys?p=b2c_1_galp';
 
-        $response = json_decode($this->client->get($uri)->getBody()->getContents());
+        $client = new GuzzleHttp\Client();
+
+        $response = json_decode($client->get($uri)->getBody()->getContents());
 
         $x5c = '';
 
