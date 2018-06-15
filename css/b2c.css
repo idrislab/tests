@@ -82,12 +82,11 @@
 }
 
 .create p {
-    margin-top: 40px;
-    margin-bottom: 80px;
     display: block;
     font-size: 14px;
     color: #676c6f;
-    margin-bottom: 5px;
+    position: absolute;
+    bottom: -200px;
 }
 
 #createAccount {
@@ -114,12 +113,12 @@
 
 #api {
     position: relative;
-    padding: 50px 0px;
+    padding: 30px 0 0 0;
 }
 
 .social {
     position: absolute;
-    bottom: 0px;
+    bottom: -80px;
 }
 
 .social .options div {

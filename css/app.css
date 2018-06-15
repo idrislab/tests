@@ -790,7 +790,7 @@ svg:not(:root) {
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1.57;
+    line-height: 3;
     letter-spacing: normal;
     text-align: left;
     color: #676c6f;
