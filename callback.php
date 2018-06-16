@@ -13,7 +13,7 @@ $response = $client->post($url, [
         'grant_type' => 'authorization_code',
         'client_id' => 'e14765b1-fd07-4a3c-b0bc-6ae44b0dab9d',
         'client_secret' => 'TQfHi64wzN5!7`ti^?2d"LgM',
-        'code' => $_POST['code'],
+        'code' => $_REQUEST['code'],
         'redirect_uri' => 'urn:ietf:wg:oauth:2.0:oob',
         'scope' => 'offline_access e14765b1-fd07-4a3c-b0bc-6ae44b0dab9d',
     ],
